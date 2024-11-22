@@ -26,7 +26,7 @@
             border-radius: 15px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
             width: 600px;
-            height: 670px;
+            height: 630px;
         }
 
         .title {
@@ -384,41 +384,7 @@
 </head>
 
 <body>
-    <div id="teamSetup" class="team-setup">
-        <h2>Team Setup</h2>
-        <div class="team-count">
-            <label for="teamCount">Number of Teams (1-5):</label>
-            <input type="number" id="teamCount" min="1" max="5" value="2">
-        </div>
-        <div id="teamNames"></div>
-        <button id="startGame">Start Game</button>
-    </div>
-    <div class="game-container">
-        <h1 class="title">Wavelength</h1>
-        <div class="board">
-            <div class="target-area" id="targetArea"></div>
-            <div class="needle-container" id="needleContainer">
-                <div class="needle" id="needle"></div>
-            </div>
-        </div>
-        <div class="clues-container">
-            <div class="clue" id="leftClue"></div>
-            <div class="bidirectional-arrow"></div>
-            <div class="clue" id="rightClue"></div>
-        </div>
-        <div class="controls">
-            <button id="toggleButton">Hide Target</button>
-            <button id="nextRoundButton">Next Round</button>
-            <button id="newGameButton" style="background-color: red; color: white">
-                New Game
-            </button>
-
-        </div>
-        <button id="howToPlayButton" class="how-to-play">How to Play</button>
-        <div id="score"></div>
-        <div id="totalScore">Total Score: 0</div>
-
-        <div id="howToPlayModal" class="modal">
+    <div id="howToPlayModal" class="modal">
             <div class="modal-content">
                 <h2>How to Play Wavelength</h2>
                 <div class="modal-body">
@@ -449,6 +415,40 @@
                 <button class="close-button">Got it!</button>
             </div>
         </div>
+    <div id="teamSetup" class="team-setup">
+        <h1 class="title">Wavelength</h1>
+        <h2>Team Setup</h2>
+        <div class="team-count">
+            <label for="teamCount">Number of Teams (1-5):</label>
+            <input type="number" id="teamCount" min="1" max="5" value="2">
+        </div>
+        <div id="teamNames"></div>
+        <button id="startGame">Start Game</button>
+        <button id="howToPlayButton" class="how-to-play">How to Play</button>
+    </div>
+    <div class="game-container">
+        <h1 class="title">Wavelength</h1>
+        <div class="board">
+            <div class="target-area" id="targetArea"></div>
+            <div class="needle-container" id="needleContainer">
+                <div class="needle" id="needle"></div>
+            </div>
+        </div>
+        <div class="clues-container">
+            <div class="clue" id="leftClue"></div>
+            <div class="bidirectional-arrow"></div>
+            <div class="clue" id="rightClue"></div>
+        </div>
+        <div class="controls">
+            <button id="toggleButton">Hide Target</button>
+            <button id="nextRoundButton">Next Round</button>
+            <button id="newGameButton" style="background-color: red; color: white">
+                New Game
+            </button>
+
+        </div>
+        <div id="score"></div>
+        <div id="totalScore">Total Score: 0</div>
 
         <script>
             const needleContainer = document.getElementById("needleContainer");
